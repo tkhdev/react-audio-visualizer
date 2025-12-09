@@ -1,0 +1,38 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+
+# Development
+.vite
+coverage
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+.cache
+
+# Package manager locks (optional - some teams prefer to commit these)
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
+
+implementation.md

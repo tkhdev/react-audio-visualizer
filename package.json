@@ -1,0 +1,61 @@
+{
+  "name": "@tkhdev/react-audio-visualizer",
+  "version": "0.1.1",
+  "description": "Tiny high-performance audio visualizer hook for React",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsup",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "lint": "eslint src",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "audio",
+    "visualizer",
+    "web-audio",
+    "hook"
+  ],
+  "author": "Tymur Khamitov <timur.khamitov.dev@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkhdev/react-audio-visualizer.git"
+  },
+  "homepage": "https://github.com/tkhdev/react-audio-visualizer#readme",
+  "bugs": {
+    "url": "https://github.com/tkhdev/react-audio-visualizer/issues"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/parser": "^8.48.1",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "jsdom": "^27.0.1",
+    "prettier": "^3.7.4",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.7",
+    "vitest": "^3.2.4"
+  }
+}
