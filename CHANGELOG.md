@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.2] - 2025-12-09
+
+### Added
+- Live demo page deployed at https://tkhdev-react-audio-visualizer.vercel.app/
+
 ## [0.1.1] - 2025-12-09
 
 ### Added

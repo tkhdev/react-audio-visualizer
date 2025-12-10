@@ -9,7 +9,7 @@
 
 **A tiny, high-performance audio visualizer hook for React using Web Audio API + Canvas**
 
-[Features](#-features) • [Installation](#-installation) • [Quick Start](#-quick-start) • [API Reference](#-api-reference) • [Examples](#-examples) • [Performance](#-performance)
+[Features](#-features) • [Installation](#-installation) • [Quick Start](#-quick-start) • [API Reference](#-api-reference) • [Examples](#-examples) • [Performance](#-performance) • [Live Demo](https://tkhdev-react-audio-visualizer.vercel.app/)
 
 </div>
 
@@ -340,6 +340,16 @@ type FFTSize = 256 | 512 | 1024 | 2048;
 
 type BarColor = string | ((value: number) => string);
 ```
+
+---
+
+## 🎮 Live Demo
+
+Try the interactive demo with all 37 visualization modes:
+
+**👉 [View Live Demo](https://tkhdev-react-audio-visualizer.vercel.app/)**
+
+The demo showcases all visualization modes with both microphone input and audio file playback.
 
 ---
 
