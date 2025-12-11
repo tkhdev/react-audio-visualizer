@@ -3,7 +3,9 @@
 <div align="center">
 
 ![npm version](https://img.shields.io/npm/v/@tkhdev/react-audio-visualizer?style=flat-square)
+![npm downloads](https://img.shields.io/npm/dm/@tkhdev/react-audio-visualizer?style=flat-square&label=downloads)
 ![license](https://img.shields.io/npm/l/@tkhdev/react-audio-visualizer?style=flat-square)
+![bundle size](https://img.shields.io/bundlephobia/minzip/@tkhdev/react-audio-visualizer?style=flat-square&label=bundle%20size)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-square&logo=typescript)
 ![React](https://img.shields.io/badge/React-%3E%3D17-61dafb?style=flat-square&logo=react)
 
@@ -18,6 +20,7 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
+- [Visual Gallery](#-visual-gallery)
 - [Features](#-features)
 - [Installation](#-installation)
 - [Quick Start](#-quick-start)
@@ -36,17 +39,55 @@
 
 ## 🎯 Overview
 
-`@tkhdev/react-audio-visualizer` is a lightweight, performant React hook that provides real-time audio visualization capabilities. Built on top of the Web Audio API and HTML5 Canvas, it offers 37 unique visualization modes with zero React re-renders per frame, making it perfect for music players, voice analysis tools, and interactive audio experiences.
+`@tkhdev/react-audio-visualizer` is a lightweight, performant React hook that provides real-time audio visualization capabilities. Built on top of the Web Audio API and HTML5 Canvas, it offers 38 unique visualization modes with zero React re-renders per frame, making it perfect for music players, voice analysis tools, and interactive audio experiences.
 
 ### Key Highlights
 
 - 🚀 **Zero Re-renders**: Uses `requestAnimationFrame` for smooth 60 FPS animations without triggering React re-renders
 - 📦 **Tree-shakeable**: Dynamic imports ensure only used renderers are bundled
-- 🎨 **37 Visualization Modes**: From classic waveforms to artistic patterns
+- 🎨 **38 Visualization Modes**: From classic waveforms to artistic patterns
 - 🔧 **Fully Typed**: Complete TypeScript support with comprehensive type definitions
 - 🌐 **SSR Safe**: Works seamlessly with Next.js and other SSR frameworks
 - 🎤 **Dual Input Support**: Works with microphone input or HTML audio elements
 - 📱 **Mobile Ready**: Optimized for mobile browsers with high-DPI display support
+
+---
+
+## 🎨 Visual Gallery
+
+Here are some examples of the visualizations in action:
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center"><img src="https://i.ibb.co/99jT0Mk8/Screenshot-2025-12-11-at-09-49-04.png" width="300" alt="Visualization"></td>
+<td align="center"><img src="https://i.ibb.co/DDpxVfNy/Screenshot-2025-12-11-at-09-48-07.png" width="300" alt="Visualization"></td>
+<td align="center"><img src="https://i.ibb.co/mrc5v7nw/Screenshot-2025-12-11-at-09-50-26.png" width="300" alt="Visualization"></td>
+</tr>
+<tr>
+<td align="center"><img src="https://i.ibb.co/HvbbYT3/Screenshot-2025-12-11-at-09-52-00.png" width="300" alt="Visualization"></td>
+<td align="center"><img src="https://i.ibb.co/J8gSc1j/Screenshot-2025-12-11-at-09-48-46.png" width="300" alt="Visualization"></td>
+<td align="center"><img src="https://i.ibb.co/Kxt35KKk/Screenshot-2025-12-11-at-09-51-34.png" width="300" alt="Visualization"></td>
+</tr>
+<tr>
+<td align="center"><img src="https://i.ibb.co/DgVP2hg4/Screenshot-2025-12-11-at-09-49-15.png" width="300" alt="Visualization"></td>
+<td align="center"><img src="https://i.ibb.co/PX15MB5/Screenshot-2025-12-11-at-09-49-23.png" width="300" alt="Visualization"></td>
+<td align="center"><img src="https://i.ibb.co/0ym9dvbF/Screenshot-2025-12-11-at-09-49-34.png" width="300" alt="Visualization"></td>
+</tr>
+<tr>
+<td align="center"><img src="https://i.ibb.co/B2dnZBb1/Screenshot-2025-12-11-at-09-50-36.png" width="300" alt="Visualization"></td>
+<td align="center"><img src="https://i.ibb.co/tpV4rZXQ/Screenshot-2025-12-11-at-09-51-09.png" width="300" alt="Visualization"></td>
+<td align="center"><img src="https://i.ibb.co/93ncFDjc/Screenshot-2025-12-11-at-09-51-22.png" width="300" alt="Visualization"></td>
+</tr>
+<tr>
+<td align="center"><img src="https://i.ibb.co/G4H8ycr0/Screenshot-2025-12-11-at-09-50-59.png" width="300" alt="Visualization"></td>
+<td align="center"><img src="https://i.ibb.co/bYyRw8m/Screenshot-2025-12-11-at-09-50-47.png" width="300" alt="Visualization"></td>
+<td align="center"><img src="https://i.ibb.co/bjqJ8pvF/Screenshot-2025-12-11-at-09-48-21.png" width="300" alt="Visualization"></td>
+</tr>
+</table>
+
+</div>
 
 ---
 
@@ -60,7 +101,7 @@
   - 🔄 Automatic source management and cleanup
 
 - **Rich Visualization Options**
-  - 📊 37 built-in visualization modes
+  - 📊 38 built-in visualization modes
   - 🎨 Customizable colors (static or dynamic functions)
   - 🔄 Mirror mode for symmetric visualizations
   - 📐 Configurable FFT sizes (256, 512, 1024, 2048)
@@ -165,7 +206,7 @@ function App() {
 
 ## 🎨 Visualization Modes
 
-The library provides 37 visualization modes organized by category:
+The library provides 38 visualization modes organized by category:
 
 ### Waveform Modes
 - `waveform` - Classic time-domain waveform
@@ -202,6 +243,7 @@ The library provides 37 visualization modes organized by category:
 - `particle-trails` - Particles with trails
 - `matrix` - Matrix-style visualization
 - `pulse` - Pulsing visualization
+- `nebula` - Flowing organic patterns with particles and gradients
 
 ### Analysis Modes
 - `loudness` - Overall loudness meter
@@ -332,6 +374,7 @@ type VisualizerMode =
   | 'light-rays'
   | 'energy-waves'
   | 'waveform-history'
+  | 'nebula'
   | 'combined';
 
 type AudioSource = 'mic' | HTMLAudioElement;
@@ -345,7 +388,7 @@ type BarColor = string | ((value: number) => string);
 
 ## 🎮 Live Demo
 
-Try the interactive demo with all 37 visualization modes:
+Try the interactive demo with all 38 visualization modes:
 
 **👉 [View Live Demo](https://tkhdev-react-audio-visualizer.vercel.app/)**
 
@@ -680,25 +723,38 @@ On a modern desktop (Chrome):
 
 ## 🌐 Browser Support
 
-| Browser | Version | Notes |
-|---------|---------|-------|
-| Chrome/Edge | ✅ Latest | Full support |
-| Firefox | ✅ Latest | Full support |
-| Safari | ✅ Latest | Requires user gesture to start AudioContext |
-| Mobile Chrome | ✅ Latest | Full support |
-| Mobile Safari | ✅ Latest | Requires user gesture |
-| Opera | ✅ Latest | Full support |
+| Browser | Minimum Version | Notes |
+|---------|----------------|-------|
+| Chrome | 25+ (2013) | Full support for all features |
+| Firefox | 25+ (2013) | Full support for all features |
+| Safari | 6+ (2012) | Uses `webkitAudioContext` prefix. Full `AudioContext` support since Safari 14.1+ (2021) |
+| Edge (Legacy) | 12+ (2015) | Full support |
+| Edge (Chromium) | 79+ (2020) | Full support, same as Chrome |
+| Opera | 27+ (2014) | Full support |
+| Mobile Chrome | 25+ | Full support for all features |
+| Mobile Safari | 6+ | Requires user gesture to start AudioContext |
+| Mobile Firefox | 25+ | Full support |
 
 ### Web Audio API Support
 
 The library requires browsers that support:
-- `AudioContext` or `webkitAudioContext`
+- `AudioContext` or `webkitAudioContext` (for Safari < 14.1)
 - `getUserMedia` (for microphone input)
 - `HTMLCanvasElement` and `CanvasRenderingContext2D`
 
-### Safari Considerations
+### Browser-Specific Considerations
 
-Safari has stricter autoplay policies. The hook automatically handles AudioContext resumption, but users must interact with the page (click, tap) before audio can start.
+- **Safari**: Has stricter autoplay policies. The hook automatically handles AudioContext resumption, but users must interact with the page (click, tap) before audio can start. Older Safari versions (< 14.1) use the `webkitAudioContext` prefix, which is automatically handled by the library.
+
+- **Mobile Browsers**: All mobile browsers require user interaction before starting audio. This is a security feature and cannot be bypassed.
+
+- **HTTPS Requirement**: Microphone access (`getUserMedia`) requires HTTPS in production. Localhost is allowed for development.
+
+### Feature Detection
+
+The library automatically detects browser capabilities and uses appropriate APIs. If your target browsers are very old, consider using polyfills for:
+- `AudioContext` / `webkitAudioContext`
+- `getUserMedia`
 
 ---
 
@@ -795,7 +851,7 @@ react-audio-visualizer/
 │   │   ├── analyser.ts     # AnalyserNode configuration
 │   │   ├── createAudioContext.ts  # AudioContext creation
 │   │   └── createSource.ts # Audio source creation (mic/element)
-│   ├── renderers/          # Visualization renderers (37 modes)
+│   ├── renderers/          # Visualization renderers (38 modes)
 │   │   ├── waveform.ts
 │   │   ├── spectrum.ts
 │   │   └── ...

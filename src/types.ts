@@ -37,6 +37,7 @@ export type VisualizerMode =
   | 'light-rays'
   | 'energy-waves'
   | 'waveform-history'
+  | 'nebula'
   | 'combined';
 export type AudioSource = 'mic' | HTMLAudioElement;
 export type FFTSize = 256 | 512 | 1024 | 2048;

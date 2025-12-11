@@ -70,6 +70,7 @@ const rendererMap: Record<
   'light-rays': () => import('./lightRays').then(m => ({ default: m.drawLightRays })),
   'energy-waves': () => import('./energyWaves').then(m => ({ default: m.drawEnergyWaves })),
   'waveform-history': () => import('./waveformHistory').then(m => ({ default: m.drawWaveformHistory })),
+  nebula: () => import('./nebula').then(m => ({ default: m.drawNebula })),
   combined: () => import('./combined').then(m => ({ default: m.drawCombined })),
 };
 

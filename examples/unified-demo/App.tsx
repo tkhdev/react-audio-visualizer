@@ -40,6 +40,7 @@ const VISUALIZATION_MODES: { value: VisualizerMode; label: string; category: str
   { value: 'energy-waves', label: 'Energy Waves', category: 'Effects' },
   { value: 'sound-waves', label: 'Sound Waves', category: 'Effects' },
   { value: 'pulse', label: 'Pulse', category: 'Effects' },
+  { value: 'nebula', label: 'Nebula', category: 'Effects' },
   
   { value: 'loudness', label: 'Loudness', category: 'Meters' },
   { value: 'vu-meter', label: 'VU Meter', category: 'Meters' },
@@ -587,13 +588,172 @@ ${closing}
         color: 'white',
         boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
       }}>
-        <h1 style={{ margin: 0, fontSize: '2rem', fontWeight: '700' }}>
-          🎵 React Audio Visualizer
-        </h1>
-        <p style={{ margin: '0.5rem 0 0 0', fontSize: '1rem', opacity: 0.9 }}>
-          High-performance audio visualization hook for React
-        </p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+          <div>
+            <h1 style={{ margin: 0, fontSize: '2rem', fontWeight: '700' }}>
+              🎵 React Audio Visualizer
+            </h1>
+            <p style={{ margin: '0.5rem 0 0 0', fontSize: '1rem', opacity: 0.9 }}>
+              High-performance audio visualization hook for React
+            </p>
+          </div>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <a
+              href="https://www.npmjs.com/package/@tkhdev/react-audio-visualizer"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                padding: '0.5rem 1rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '6px',
+                fontSize: '0.9rem',
+                fontWeight: '600',
+                transition: 'background-color 0.2s',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.3)'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)'}
+            >
+              📦 NPM
+            </a>
+            <a
+              href="https://github.com/tkhdev/react-audio-visualizer"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                padding: '0.5rem 1rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '6px',
+                fontSize: '0.9rem',
+                fontWeight: '600',
+                transition: 'background-color 0.2s',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.3)'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)'}
+            >
+              🔗 GitHub
+            </a>
+            <a
+              href="https://github.com/tkhdev/react-audio-visualizer#readme"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                padding: '0.5rem 1rem',
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '6px',
+                fontSize: '0.9rem',
+                fontWeight: '600',
+                transition: 'background-color 0.2s',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.3)'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)'}
+            >
+              📖 Docs
+            </a>
+          </div>
+        </div>
       </header>
+
+      {/* Installation Instructions Banner */}
+      <div style={{
+        backgroundColor: '#1a1a2e',
+        borderBottom: '1px solid #333',
+        padding: '1rem 2rem',
+      }}>
+        <details style={{ cursor: 'pointer' }}>
+          <summary style={{
+            fontSize: '1rem',
+            fontWeight: '600',
+            color: '#fff',
+            userSelect: 'none',
+            outline: 'none',
+          }}>
+            📥 Installation Instructions
+          </summary>
+          <div style={{ marginTop: '1rem', paddingLeft: '1rem', borderLeft: '3px solid #667eea' }}>
+            <p style={{ margin: '0.5rem 0', color: '#ccc', fontSize: '0.95rem' }}>
+              Install the package using npm, yarn, or pnpm:
+            </p>
+            <div style={{
+              backgroundColor: '#0a0a0a',
+              borderRadius: '8px',
+              padding: '1rem',
+              marginTop: '0.5rem',
+              fontFamily: 'monospace',
+              fontSize: '0.9rem',
+            }}>
+              <div style={{ marginBottom: '0.5rem', color: '#00ffcc' }}>
+                <span style={{ color: '#888' }}>$</span> npm install @tkhdev/react-audio-visualizer
+              </div>
+              <div style={{ marginBottom: '0.5rem', color: '#00ffcc' }}>
+                <span style={{ color: '#888' }}>$</span> yarn add @tkhdev/react-audio-visualizer
+              </div>
+              <div style={{ color: '#00ffcc' }}>
+                <span style={{ color: '#888' }}>$</span> pnpm add @tkhdev/react-audio-visualizer
+              </div>
+            </div>
+            <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+              <a
+                href="https://www.npmjs.com/package/@tkhdev/react-audio-visualizer"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: '#667eea',
+                  textDecoration: 'none',
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                }}
+              >
+                📦 View on NPM →
+              </a>
+              <a
+                href="https://github.com/tkhdev/react-audio-visualizer"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: '#667eea',
+                  textDecoration: 'none',
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                }}
+              >
+                🔗 View on GitHub →
+              </a>
+              <a
+                href="https://github.com/tkhdev/react-audio-visualizer#readme"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: '#667eea',
+                  textDecoration: 'none',
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                }}
+              >
+                📖 Full Documentation →
+              </a>
+              <a
+                href="https://github.com/tkhdev/react-audio-visualizer/issues"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: '#667eea',
+                  textDecoration: 'none',
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                }}
+              >
+                🐛 Report Issues →
+              </a>
+            </div>
+          </div>
+        </details>
+      </div>
 
       {/* Main Content */}
       <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
